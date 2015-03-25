@@ -1,0 +1,47 @@
+/*********************************************
+ * PRESENTATION SPECIFIC STYLES.
+ *********************************************/
+
+/* img caption */
+p.caption {
+    font-size: 12pt;
+    margin: 0;
+    margin-top: -20px;
+}
+p.caption span.small-caption {
+    font-size: 10pt;
+}
+
+/* Title page */
+section.cover {
+}
+h3.cover-title, h5.cover-author {
+    color: #fff;
+}
+h3.cover-title {
+    font-size: 38pt;
+    text-align: left;
+    padding: 15px 30px;
+    background-color: rgba(46,52,54,0.9);
+}
+h5.cover-author {
+    float: right;
+    text-align: right;
+    margin-top: 340px;
+    padding: 15px 30px;
+    width: 300px;
+    background-color: rgba(46,52,54,0.9);
+}
+
+span.bio{
+}
+span.ml {
+}
+span.bio.core{
+    color: #73d216;
+    font-weight: bold;
+}
+span.ml.core {
+    color: #3465a4;
+    font-weight: bold;
+}
