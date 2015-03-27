@@ -45,3 +45,12 @@ span.ml.core {
     color: #3465a4;
     font-weight: bold;
 }
+
+/* eiwit sequentie */
+.reveal pre {
+    margin: 15px;
+    font-size: 11pt;
+    padding: 15px;
+    float: left;
+    width: 620px;
+}
