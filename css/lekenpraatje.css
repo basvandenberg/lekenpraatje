@@ -22,7 +22,7 @@ h3.cover-title {
     font-size: 38pt;
     text-align: left;
     padding: 15px 30px;
-    background-color: rgba(46,52,54,0.9);
+    background-color: rgba(46,52,54,0.7);
 }
 h5.cover-author {
     float: right;
@@ -30,7 +30,7 @@ h5.cover-author {
     margin-top: 340px;
     padding: 15px 30px;
     width: 300px;
-    background-color: rgba(46,52,54,0.9);
+    background-color: rgba(46,52,54,0.7);
 }
 
 span.bio{
