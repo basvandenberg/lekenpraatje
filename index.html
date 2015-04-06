@@ -50,44 +50,125 @@
 <!--section class="cover" data-background="#2e3436"-->
     <h3 class="cover-title">Sequence-based learning algorithms<br />for understanding and improving<br />protein characteristics</h3>
     <h5 class="cover-author">B.A. van den Berg</h5>
+
+    <aside class="notes">
+
+<p>
+
+Van harte welkom hier in de aula van de TU Delft bij de verdediging van mijn
+proefschrift, leuk dat jullie hier allemaal zijn om dit bij te wonen.
+
+</p>
+<p>
+
+Om 15:00 uur stipt zal de verdediging aanvangen, vlak daarvoor zal ik nog kort
+uitleggen hoe dat in zijn werk gaat.
+
+</p>
+<p>
+
+Maar nu eerst zal ik een korte presentatie geven, zo'n 20 minuten, over het
+onderzoek waar ik de afgelopen jaren mee bezig geweest ben, datgene wat in mijn
+proefschrift beschreven staat. 
+
+</p>
+<p>
+
+Nu is 20 minuten wat kort om 4 jaar werk te vatten, en ook al zullen jullie het
+meeste van het proefschrift zonder problemen begrepen hebben, er zitten ook wat
+stukken in die wat lastiger zijn. Ik houd daarom enkel bij de hoofdlijn van het
+onderzoek, en ik houd het simpel, een beetje klokhuis laten we zeggen.
+
+</p>
+<p>
+
+Het idee is dat ik jullie ga uitleggen wat er op de kaft staat van mijn
+proefschrift. Want dat laat eigenlijk de hoofdlijn van mijn onderzoek zien.
+
+</p>
+
+    </aside>
+
 </section>
 
 <!-- Overview. -->
 
 <section>
-    <h2>Overzicht</h2>
+    <!--h2>Overzicht</h2-->
 
-    <p><span class="ml">Sequence-based <span class="ml core">learning algorithms</span></span><br />for <span class="bio">understanding and improving<br /><span class="bio core">protein</span> characteristics</span></p>
+    <p><span class="ml">Sequence-based <span class="ml core">learning algorithms</span></span><br />for <span class="bio">understanding and improving<br /><span class="ml core">protein</span> characteristics</span></p>
+
+    <!--p><span class="ml">Sequentie-gebaseerde <span class="ml core">leer-algoritmen</span></span><br />voor het <span class="bio">begrijpen en verbeteren<br />van <span class="ml core">eiwit</span>eigenschappen</span></p-->
+
+    <aside class="notes">
+
+<p>
+
+Ik zal beginnen met de tekst, de titel. In het Nederlands staat daar:
+Sequentie-gebasseerd leeralgoritmen voor het begrijpen en verbeteren van
+eiwit-eigenschappen.
+
+</p>
+<p>
+
+De titel bevat twee belangrijke kernwoorden, leeralgoritmen en eiwitten, en die
+termen zal ik de komende 20 minuten gaan verduidelijken. En daarbij zal dan ook
+duidelijk worden wat ik eigenlijk heb onderzocht en met welk doel ik dit gedaan
+heb.
+
+</p>
+<p>
+
+Ik begin met de eiwitten, een beetje biologie.
+
+</p>
+
+    </aside>
+
 </section>
 
 <!-- Nested: Wat zijn eiwitten. -->
 
 <section>
 
-    <!-- Wat zijn eiwitten en enzymen -->
+    <!-- Wat zijn eiwitten -->
     <section>
 
         <h2>Eiwitten</h2>
-        <h4></h4>
+        <h4>Belangrijke bouwstenen in een cel</h4>
 
-        <img src="img/cartoon.png" height="450px" />
-
-    </section>
-
-    <!-- -->
-    <section>
-
-        <h3>Belangrijke bouwstenen in een cel</h3>
-
-        <img src="img/ecoli.png" height="500px" />
-        <p class="caption">Grafische weergave doorsnede <i>Escherichia coli</i> <span class="small-caption"> - door <a href="http://mgl.scripps.edu/people/goodsell/" target="blank">David Goodsell</a></span></p>
+        <img src="img/ecoli.png" height="450px" />
+        <p class="caption">Illustratie van de doorsnede van een klein stukje <i>Escherichia coli</i> cell <span class="small-caption"> - door <a href="http://mgl.scripps.edu/people/goodsell/" target="blank">David Goodsell</a></span></p>
 
         <aside class="notes">
 
-Op deze illustratie ziet u de doorsnede van een klein stukje Eschericha coli,
-bij de meeste beter bekend als e. coli.
+<p>
 
-This illustration shows a cross-section of a small portion of an Escherichia
+Eiwitten zijn belangrijke bouwstenen in een cel. Dat geld voor al onze cellen,
+huidcellen, bloedcellen, zenuwcellen, maar ook bijvoorbeeld voor de eencellige
+bacterie e. coli.
+
+</p>
+<p>
+
+Deze illustratie laat de doorsnede van een klein stukje e. coli zien, het is
+ongeveer 1.000.000x vergroot en laat alleen de grotere moleculen zien. Een cel
+bestaat voor ongeveer 60% a 70% uit water, dat variert afhankelijk van het
+celltype, en al die water moleculen zijn hier niet weergegeven. Het groene deel
+is de celwand en de gele draden zijn DNA. Verder zijn er heel veel blobjes te
+zien en dat zijn voornamelijk eiwitten en eiwitcomplexen, in totaal is ongeveer
+20% van het gewicht van een cel eiwit, dat variert wederom afhankelijk van het
+celtype.
+
+</p>
+<p>
+
+Die eiwitten hebben veel verschillende functies. Ze geven de cel structuur,
+zorgen voor transport van moleculen door de cel, ze catalyseren ... chemische
+reacties. 
+
+</p>
+<!--This illustration shows a cross-section of a small portion of an Escherichia
 coli cell. The cell wall, with two concentric membranes studded with
 transmembrane proteins, is shown in green. A large flagellar motor crosses the
 entire wall, turning the flagellum that extends upwards from the surface. The
@@ -95,10 +176,8 @@ cytoplasmic area is colored blue and purple. The large purple molecules are
 ribosomes and the small, L-shaped maroon molecules are tRNA, and the white
 strands are mRNA. Enzymes are shown in blue. The nucleoid region is shown in
 yellow and orange, with the long DNA circle shown in yellow, wrapped around HU
-protein (bacterial nucleosomes.
+protein (bacterial nucleosomes.-->
 
-Eiwitten leveren een keur aan functionaliteiten.
-Structuur, ..., catalysatie.
 
         </aside>
 
@@ -114,6 +193,39 @@ Structuur, ..., catalysatie.
         <img src="img/amino_acids_ketting.png" height="450px" />
         <img src="img/amino_acids_molecules.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+Een eiwit is wat we noemen een macromolekuul, wat betekend dat het een
+aaneenschakeling van molekulen is, in dit geval een aaneenschakeling van
+aminozuren. Het is eigenlijk een soort van ketting.
+
+</p>
+<p>
+
+Er zijn 20 verschillende aminozuren. De chemische structuur van 4 aminozuren
+zijn hier rechts afgebeeld. De bovenkant, het zwarte deel, is bij alle 20
+aminozuren hetzelfde, die delen worden aan elkaar gekoppeld. Het beige deel aan
+de onderkant is de zijgroep en die is verschillend voor alle 20 aminozuren.
+
+</p>
+<p>
+
+Daardoor hebben alle aminozuren verschillende eigenschappen. Het ene aminozuur
+is bijvoorbeeld meer hydrofoop (komt niet graag in contact met water) en het
+andere aminozuur is meer hydrfiel (komt wel graag in contact met water).
+
+</p>
+<p>
+
+Deze eigenschap is heel belangrijk omdat er veel water in een cel. Dat zorgt
+ervoor dat alle hydrophobe elkaar opzoeken, samenklonteren, om maar niet in
+contact met water te komen. 
+
+</p>
+        </aside>
+
     </section>
 
     <!-- -->
@@ -125,6 +237,19 @@ Structuur, ..., catalysatie.
         <img src="img/surface.png" height="450px" />
         <img src="img/cartoon.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+En op die manier vouwt de ketting zich op tot zo'n lelijke blob hier links.
+Omdat in zo'n afbeeld niet duidelijk te zien is hoe de ketting is
+opgevouwen wordt deze vaak in de zogenaamde 'cartoon' weergave getoond, zoals
+in de afbeelding rechts. En daarmee is meteen duidelijk dat dat ding op de
+voorkant van mijn proefschrift een eiwit is.
+
+</p>
+        </aside>
+
     </section>
 
     <!-- -->
@@ -135,8 +260,30 @@ Structuur, ..., catalysatie.
 
         <img src="img/central_dogma.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+Als laatst is het nog interessant om te kijken naar wat de volgorde van de
+ketting bepaald. Die informatie ligt opgeslagen in het DNA. Het DNA is
+eigenlijk ook een ketting, maar dan een hele lange en opgebouwd uit 4
+verschillende moleculen, nucleotiden. Van dit DNA worden in een cel bepaald
+stukken, de genen, gekopieerd naar RNA (zie midden) wat ook een ketting is die
+is opgebouwd uit 4 moleculen. Het RNA wordt vervolgens omgezet naar een eiwit,
+waarbij drie opeenvolgende nucleotide steeds bepalen welke aminozuur er aan de
+eiwitketting wordt gekoppeld.
+
+</p>
+<p>
+
+Nu zijn we in dit werk voornamelijk geinteresseerd in een
+bepaald soort eiwitten, enzymen.</li>
+
+</p>
+
+        </aside>
     </section>
-    
+
 </section>
 
 <!-- Nested: Wat maakt eiwitten zo interessant voor ons. -->
@@ -154,12 +301,33 @@ Structuur, ..., catalysatie.
 
         <aside class="notes">
 
-Verwijzen naar boekje, we willen eigenschappen begrijpen en verbeteren, maar
-waarom willen we dat eigenlijk?
+<p>
 
-Een van de rede welke eiwitten zo interessant maken is dat we veel praktische
-toepassingen hebben waarvoor we deze moleculen gebruiken.
+Enzymen zijn eiwitten die een bepaalde reactie catalyseren, versnellen,
+bijvoorbeeld het doorknippen van een bepaald molecuul of het omklappen van een
+deel van een molokuul.
 
+</p>
+<p>
+
+De afbeelding laat een enzyme zien die is opgebouwd uit twee eiwitten die
+elkaar knuffelen (dat komt vaak voor, dat eiwitten als het waren aan elkaar
+plakken). En deze heeft een klein compartiment waar een bepaald molecuul
+precies in past, het klein stukje geel in de afbeelding. Zodra het molecuul in
+dat compartiment zit wordt er deel van het molekuul omgeklapt en dan wordt het
+molekuul weer losgelaten.
+
+</p>
+<p>
+
+Dat omklappen van dat gebeurt van nature niet vaak, maar met zulke enzymen in
+de buurt komt die reactie veel vaker, zei catalyseren die reactie.  Zulke
+enzymen, zulke reactieversnellers zijn essentieel voor het functioneren van
+cellen, maar tegenwoordig kennen enzymen ook veel praktische toepassingen.
+
+</p>
+
+<!--
 Glucose-6-phosphate isomerase (alternatively known as phosphoglucose isomerase
 or phosphohexose isomerase) is an enzyme that catalyzes the conversion of
 glucose-6-phosphate into fructose 6-phosphate in the second step of glycolysis.
@@ -167,7 +335,7 @@ glucose-6-phosphate into fructose 6-phosphate in the second step of glycolysis.
 Functional PGI is a dimer composed of two identical monomers. The two monomers
 interact notably through the two protrusions in a hugging embrace. The active
 site of each monomer is formed by a cleft between the two domains and the dimer
-interface.
+interface.-->
 
         </aside>
 
@@ -184,6 +352,22 @@ interface.
         <img src="img/textiel.jpg" height="200px">
         <img src="img/leer.jpg" height="200px">
 
+        <aside class="notes">
+
+<p>
+
+Zo worden enzymen al lange tijd toegepast bij de productieprocessen van
+voedsel, drank, textiel en leer.
+
+</p>
+<p>
+
+Meer recent, door de toenemende bewustwording dat we zuinig moeten zijn op het
+milue en wat duurzamer moeten leven komen er steeds toepassingen bij.
+
+</p>
+        </aside>
+
     </section>
 
     <!-- -->
@@ -195,6 +379,18 @@ interface.
         <img src="img/detergent.jpg" height="350px">
         <img src="img/detergent_30graden.png" height="350px">
 
+        <aside class="notes">
+
+<p>
+
+Enzymen worden bijvoorbeeld gebruikt in wasmiddelen voor het kapotknippen vuil
+en vettigheid op onze kleren. Daardoor hebben we minder chemicalien nodig,
+waardoor het minder vervuilend is, en kunnen we al op 30 graden onze kleren,
+wat veel energie bespaard.
+
+</p>
+        </aside>
+
     </section>
 
     <!-- -->
@@ -204,6 +400,16 @@ interface.
         <h5>Enzyme bleken, verwijderen inkt, verbeteren structuur</h5>
 
         <img src="img/paper.jpg" height="350px">
+
+        <aside class="notes">
+<p>
+
+Op een vergelijkbare manier worden enzymen gebruikt in pulp en papier
+industrie. Bij het recyclen worden enzymen bijvoorbeeld gebruikt voor het
+verwijderen van inkt en lijmresten.
+
+</p>
+        </aside>
 
     </section>
 
@@ -232,6 +438,23 @@ interface.
 
         <aside class="notes">
 
+<p>
+
+En enzymen zullen een grote rol gaan spelen in de productie van tweede
+generatie biobrandstoffen. Enzymen worden daarbij gebruikt om biomassa, zoals
+stro of het maisplanten, om te zetten in ethanol wat we vervolgens als
+brandstof kunnen gebruiken.
+
+</p>
+<p>
+
+Enzymeproductie is misschien niet de meest bekende maar het is wel degelijk een
+zeer grote industrie en de verwachting is dat deze flink zal toenemen de
+komende tijd. Vandaar dat er grote interesse is om de industriele productie van
+enzymen te optimaliseren.
+
+</p>
+
         </aside>
     </section>
 
@@ -252,6 +475,19 @@ interface.
 
         <aside class="notes">
 
+<p>
+
+Laten we eens kijken hoe enzymen worden geproduceerd. Vaak gebeurt dit met
+behulp van schimmels die als kleine enzymfabriekjes worden gebruikt. 
+
+</p>
+
+<p>
+
+Op deze afbeelding zien jullie de mooie zwarte schimmel Aspergilles niger, wat
+de schimmel is die in dit werk gebruikt is voor het produceren van enzymen.
+
+</p>
 
         </aside>
 
@@ -268,12 +504,22 @@ interface.
 
         <aside class="notes">
 
-Aspergillus niger (net als veel andere schimmels) verteren hun voedsel voordat
-ze het opnemen. Het verteren van voedsel gebeurt buiten de cel doordat ze
-enzymen die het voedsel verteren uitschijden en het verteerde voedsel
-vervolgens opnemen.
+<p>
 
-Ze zijn dus goed in het uitscheiden van een type enzymen welke veel nuttige toepassingen kennen. Daa
+Schimmels transporteren veel enzymen naar buiten de cel, ze secreteren veel
+enzymen. Dit doen ze om voedsel buiten de cell, bijvoorbeeld het blad van een
+paprikaplant, af te kunnen breken. Daar waar wij voedsel opeten wat in onze
+maag word verteerd, verteren schimmels hun voedsel buiten de cel en nemen
+vervolgens de voedingstoffen weer op. 
+
+</p>
+<p>
+
+Hierdoor hebben schimmels een goed vermogen om veel enzymen te secreteren dat
+maakt schimmels zeer aantrekkelijk voor enzymproductie, omdat de enzymen buiten
+de cel zijn makkelijk 'als het ware' af te tappen.
+
+</p>
 
         </aside>
 
@@ -290,16 +536,22 @@ Ze zijn dus goed in het uitscheiden van een type enzymen welke veel nuttige toep
         <!-- Overgang naar learning algorithms. -->
         <aside class="notes">
 
-Er zijn veel verschillend manieren waarop enzymeproductie geoptimaliseerd kan
-worden. Bijvoorbeeld:
+<p>
 
-<ul>
-    <li>bla</li>
-    <li>bla</li>
-    <li>bla</li>
-</ul>
+Industriele productie van enzymen vind plaats in zogenaamde fermenters, zoals
+degene op de foto. In zo'n fermeter worden condities optimaal gehouden om de
+schimmel zo veel mogenlijk van een enzyme te laten produceren. Bijvoorbeeld de
+temperatuur en de hoeveelheid voedingsstoffen worden zo gecontroleerd dat de
+schimmel het helemaal naar zijn zin heeft.
 
-Wij hebben een nieuwe aanpak.
+</p>
+<p>
+
+Uiteraard willen we een zo'n hoog mogelijke enzymproductie, en het aanpassen
+van de condities in de fermenter is een van de manieren om het productieniveau
+te optimaliseren.
+
+</p>
 
         </aside>
 
@@ -308,8 +560,8 @@ Wij hebben een nieuwe aanpak.
     <!-- Enzyme optimalizeren -->
     <section>
 
-        <h3>Enzyme optimalizatie</h3>
-        <h5>Enzyme A geeft een hogere concentratie dan enzyme B</h5>
+        <h3>Optimalizatie van de eiwitproductie</h3>
+        <h5>Eiwit A geeft een hogere concentratie dan eiwit B</h5>
         <h2>waarom?</h2>
 
         <!-- img src="img/fermentor.jpg" height="350px" -->
@@ -317,17 +569,27 @@ Wij hebben een nieuwe aanpak.
         <!-- Overgang naar learning algorithms. -->
         <aside class="notes">
 
-Er zijn veel verschillend manieren waarop enzymeproductie geoptimaliseerd kan
-worden. Bijvoorbeeld:
+<p>
 
-<ul>
-    <li>bla</li>
-    <li>bla</li>
-    <li>bla</li>
-</ul>
+Het doel in mijn onderzoek was ook om enzymeproducties te verbeteren, maar wij
+hebben daar een nieuwe aanpak voor gebruikt, namelijk door de eigenschappen
+van het eiwit zelf aan te passen.
 
-Wij hebben een nieuwe aanpak.
+</p>
+<p>
 
+Deze aanpak was gekozen omdat bij een grote set eiwitten die waren geproduceerd
+onder dezelfde omstandighede het was opgevallen dat het ene eiwit veel hogere
+concentraties opleverde dan het andere.
+
+</p>
+<p>
+
+Dat riep de vraag op of we verschillen kunnen vinden in eiwitten met een laag
+en eiwitten met een hoop productieniveau. En om dat te testen hebben we gebruik
+gemaakt van leeralgoritmen, meer specifiek classifiren. 
+
+</p>
         </aside>
 
     </section>
@@ -346,6 +608,26 @@ Wij hebben een nieuwe aanpak.
         <img src="img/apple.png" height="300px" />
         <img src="img/pear.png" height="300px" />
 
+        <aside class="notes">
+
+<p>
+
+Tussendoor:
+
+We verlaten nu dus het biologische gedeelte en gaan we naar een meer
+wiskundig/informatica gedeelte.
+
+</p>
+<p>
+
+Voor het zoeken naar verschillen tussen eiwitten met een laag en met een hoog
+productieniveau hebben we gebruik gemaakt van classificators. En om uit te
+leggen wat een classificator is zal ik eerst uitleggen hoe we deze kunnen
+gebruiken om onderscheid te maken tussen appels en peren.
+
+</p>
+        </aside>
+
     </section>
 
     <section>
@@ -354,6 +636,19 @@ Wij hebben een nieuwe aanpak.
         <h5></h5>
 
         <img src="img/stap1.png" height="450px" />
+
+        <aside class="notes">
+
+<p>
+
+Om onderscheid te maken tussen deze twee soorten fruit, kunnen we naar wat van
+hun eigenschappen kijken. We kunnen bijvoorbeeld de hoogte en de breedte van
+het fruit meten. Want, zo is mij met de paplepel ingegoten, meten is weten.
+Deze hoogte en breedte kunnen we vervolgens in een grafiekje plotten zoals in
+de figuur te zien is.
+
+</p>
+        </aside>
 
     </section>
 
@@ -364,6 +659,15 @@ Wij hebben een nieuwe aanpak.
 
         <img src="img/stap2.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+Maar nog meer meten is nog meet weten. En hier zien we al iets interessants
+gebeuren. De appelpuntjes en peerpuntjes vormen mooi te scheiden clusters.
+
+</p>
+        </aside>
     </section>
 
     <section>
@@ -373,6 +677,16 @@ Wij hebben een nieuwe aanpak.
 
         <img src="img/stap3.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+We kunnen een grens tekenen die de appels van de peren scheidt. En deze lijn
+kunnen we nu gebruiken als beslissingsgrens om te bepalen of iets een appel of
+een peer is.
+
+</p>
+        </aside>
     </section>
 
     <section>
@@ -382,6 +696,14 @@ Wij hebben een nieuwe aanpak.
 
         <img src="img/stap4.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+En als we dan de trainingsdata wegdoen houden we een classificator over.
+
+</p>
+        </aside>
     </section>
 
     <section>
@@ -391,6 +713,33 @@ Wij hebben een nieuwe aanpak.
 
         <img src="img/stap5.png" height="450px" />
 
+        <aside class="notes">
+
+<p>
+
+Welke we kunnen vervolgens kunnen gebruiken om te voorspellen of iets een appel
+of een peer is.
+
+</p>
+
+<p>
+
+Deze appel en peer waren niet gebruikt voor het trainen van de classificator.
+Deze kunnen we gebruiken hoe goed onze classificator het doet, en zoals we
+kunnen zien werkt onze classificator perfect. De stip van de peer valt netjes
+in het peer gebied en de stip van de appel netjes in het appel gebied.
+
+</p>
+
+<p>
+
+Naast dit voorspellende vermogen kan de beslissingsgrens ons ook iets leren.
+Deze staat namelijk bijna loodrecht op de hoogte as, wat eigenlijk wil zeggen
+dat met name de hoogte van het fruit voorspeld of het een appel of peer is, en
+dat de breedte daarvoor minder belangrijk is.
+
+</p>
+        </aside>
     </section>
 
 </section>
@@ -402,11 +751,11 @@ Wij hebben een nieuwe aanpak.
     <section>
 
         <h2>Classificeren II</h2>
-        <h4>Onderscheid maken tussen enzymen met hoge en lage productieniveau's in <i>Aspergillus niger</i></h4>
+        <h4>Onderscheid maken tussen eiwitten met hoge en lage productieniveau's in <i>Aspergillus niger</i></h4>
 
         <!-- TODO -->
-        <img src="img/apple.png" height="300px" />
-        <img src="img/pear.png" height="300px" />
+        <!--img src="img/apple.png" height="300px" />
+        <img src="img/pear.png" height="300px" /-->
 
     </section>
 
@@ -452,7 +801,7 @@ E</pre>
         <h3>Eiwitproductie voorspellen</h3>
         <h5>Eiwitten selecteren die potentieel geschikt zijn voor industri&euml;le productie</h5>
 
-        <img src="img/rank.png" height="300px">
+        <!--img src="img/rank.png" height="300px"-->
 
     </section>
 
@@ -479,30 +828,62 @@ E</pre>
 
         <img src="img/stap6.png" height=350px">
 
+        <aside class="notes">
+
+<p>
+
+In de tweede fase van mijn onderzoek zijn toen gaan kijken of we de
+classificator kunnen toepassen om een eiwit aan te passen, te herontwerpen. Als
+we nou een eiwit nemen uit de groep met lage productieniveau's, hier wat
+aminozuren vervangen zodat we het eiwit over de beslissingsgrens naar de kant
+van de eiwitten met hoge productie-niveau's duwen. Zorgt dit er dan voor dat we
+ook daadwerkelijk een hogere concentratie van dit eiwit krijgen?
+
+</p>
+
+        </aside>
     </section>
 
     <section>
 
-        <h3>Eiwit ontwerp</h3>
-        <h5>8 enzymen herontwerpen met 5 tot 45 aangepaste aminozuren</h5>
+        <h3>Eiwit herontwerp</h3>
+        <h5>2 enzymen herontwerpen - 4 ontwerpen per enzym<h5>
+        <h5 style="font-size:0.75em;margin-top:-12px;">5 tot 45 aangepaste aminozuren</h5>
 
         <img src="img/An08g11860_m05.png" height=350px">
         <img src="img/An11g03200_m10.png" height=350px">
-        <p class="caption">Esterase - Inulinase</p>
+        <p class="caption" style="float:left;margin-left:10px;"><strong>Esterase herontwerp</strong> met 5 aangepaste aminozuren</p>
+        <p class="caption" style="float:right;margin-right:10px;"><strong>Inulinase herontwerp</strong> met 10 aangepaste aminozuren</p>
+
+        <aside class="notes">
+
+Om dit te testen hebben we een eiwit herontwerpmethode ontwikkeld die het eiwit
+naar de andere kant van de beslissingsgrens duwt, en tegelijkertijd ook in de
+gaten of we niet de structuur of enzymatische activiteit van het eiwit
+aantasten.
+
+Deze hebben we toegepast voor het herontwerpen van twee enzymen, een esterase
+en een inulinase, waarbij we voor elk enzym 4 ontwerpen hebben gemaakt waarin 5
+tot 45 aminozuren zijn aangepast.
+
+        </aside>
 
 
     </section>
 
     <section>
 
-        <h2>Lab resultaten</h2>
-        <h4>Tot tienvoudige extracellulaire concentraties</h4>
+        <h3>Lab resultaten</h3>
+        <h5>Tot tienvoudige extracellulaire concentraties</h5>
 
         <img src="img/lab_results.png" height=350px">
 
         <aside class="notes">
 
-Met behoud van enzymatische activiteit.
+De resultaten waren eigenlijk ver boven verwachting, voor maarliefst 4 van de 8
+herontwerpen leverde dit een flinke stijging van de concentratie op.
+
+Allemaal even afgaan.
 
         </aside>
 
